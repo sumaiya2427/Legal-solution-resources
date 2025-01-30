@@ -24,6 +24,7 @@
               colors: {
                 clifford: '#da373d',
                 "justify-primary": '#B68C5A',
+                "justify-primary-bg": '#000000',
               }
             }
           }
@@ -214,20 +215,29 @@
           <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
               <img
-                src="images/banner.png"
+                src="images/slider-1.jpg"
                 class="w-full" />
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❮</a>
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div>
             <div id="slide2" class="carousel-item relative w-full">
               <img
-                src="images/banner.png"
+                src="images/slider-2.jpg"
                 class="w-full" />
               <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a href="#slide1" class="btn btn-circle">❮</a>
                 <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="images/slider-3.jpg"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
            
@@ -292,9 +302,139 @@
               </div>
             </div>
         </section>
+        <!-- Contact With Us -->
+         <section class="my-24">
+          <h3 class="font-bold text-5xl text-center mt-12" >Contact With Us</h3>
+          <p class="text-semibold text-center text-xl mt-6 mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          <!-- contact card and form add-->
+          <div class="hero bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row">
+             <!--all card- -->
+              <div class=" grid grid-rows-1 md:grid-cols-2 lg:">
+                <!-- card-1 -->
+                <div class="card bg-base-100 w-full shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="images/address.png"
+                      alt="Shoes"
+                      class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Address</h2>
+                    <p>A108 Adam Street,<br>
+                      New York, NY 535022</p>
+                  </div>
+                </div>
+                  <!-- card-2 -->
+                  <div class="card bg-base-100 w-full shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/call.png"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Call Us</h2>
+                      <p>+88 01750 00 00 00<br>
+                        +88 01750 00 00 00</p>
+                        
+                    </div>
+                  </div>
+                    <!-- card-3 -->
+                <div class="card bg-base-100 w-full shadow-xl">
+                  <figure class="px-10 pt-10">
+                    <img
+                      src="images/email.png"
+                      alt="Shoes"
+                      class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Email Us</h2>
+                    <p>info@gmail.com <br>
+                      info@gmail.com</p>
+                  </div>
+                </div>
+                  <!-- card-4 -->
+                  <div class="card bg-base-100 w-full shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img
+                        src="images/time.png"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Working Hours</h2>
+                      <p>Mon-Fri: 9AM to 5PM<br>
+                        Sunday: 9AM to 1 PM</p>
+                    </div>
+                  </div>
+              </div>
+              <!-- mail box -->
+                  <div class="card bg-base-100 w-1/2 max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <input type="text" placeholder="Your Name" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <div class="form-control">
+                          <input type="mail" placeholder="Your Email" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <input type="text" placeholder="Subject" class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                          <input type="text" placeholder="Your Message" class="input input-bordered" required />
+                        </div>
+                      <div class="form-control mt-6">
+                        <button class="btn bg-justify-primary">Send Message</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+         </section>
 
       </main>
       <!-- footer section -->
-       <footer></footer>
+      <footer class="text-white footer bg-justify-primary-bg text-base-content p-10">
+        <nav>
+          <img src="images/logo.png" alt="">
+         <p>There are many variations of<br> passages of Lorem Ipsum <br>available, but the majority have<br> suffered alteration in some <br>form, by injected humour.</p>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Usefull Link</h6>
+          <a class="link link-hover">Homes</a>
+          <a class="link link-hover">Contact Us</a>
+          <a class="link link-hover">Cases</a>
+          <a class="link link-hover">Blog</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Contact Now</h6>
+         <p>
+          555 4th 5t NW, Washington<br>
+DC 20530, United States
+         </p>
+         <br>
+          <p>+88 01750 000 000<br>
+            +88 01750 000 000</p><br>
+         <p>info@gmail.com<br>
+          info@gmail.com</p>
+        </nav>
+        <form>
+          <h6 class="footer-title">Subscribe</h6>
+          <fieldset class="form-control w-80">
+            <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="Email Address"
+                class="input input-bordered join-item" />
+              <!-- icon add hbe -->
+            </div>
+          </fieldset>
+        </form>
+      </footer>
 </body>
 </html>
